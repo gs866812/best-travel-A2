@@ -55,15 +55,11 @@ p {
 .banner {
   width: 1170px;
   height: auto;
-  
   border-radius: 16px;
   background-image: url("images/banner-bg.png");
   background-repeat: no-repeat;
   background-size: contain;
-
 }
-
-
 
 .banner-content {
   display: flex;
@@ -73,9 +69,11 @@ p {
   gap: 20px;
   border-radius: 16px;
   height: 500px;
-  background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
-  
-  
+  background: linear-gradient(
+    180deg,
+    rgba(19, 19, 24, 0.8) 0%,
+    rgba(19, 19, 24, 0) 100%
+  );
 }
 
 .banner-title {
@@ -93,7 +91,7 @@ p {
   text-align: center;
 }
 
-.find-container {
+.form-container {
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.3);
   display: flex;
@@ -105,10 +103,29 @@ p {
 .search-info {
   width: 170px;
   height: 40px;
-  padding: 0 10px;
+  padding: 0px 10px;
   border: none;
   border-radius: 8px;
 }
+
+.search-info::placeholder{
+    padding-left: 0px;
+}
+
+.search-info select {
+    width: 170; 
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+  }
+
+  .search-info select option {
+    width: 170px; 
+  }
 
 .search-info:focus {
   outline: 0;
@@ -123,4 +140,582 @@ p {
   font-size: 16px;
   padding: 11px 30px;
   cursor: pointer;
+}
+
+  /* ....................................................header end here...................................................... */
+
+.popular{
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+}
+.text-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.common-title{
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+
+}
+
+.text-primary{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.text-primary li{
+    margin: 10px 0;
+}
+
+
+.mountain{
+    width: 50%;
+}
+.mountain img{
+    width: 100%;
+}
+
+.btn-read-more{
+    width: 200px;
+}
+
+ /* ....................................................popular end here...................................................... */
+.destination{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+ .destination-text{
+  width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+ }
+ .first-row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .maldives{
+    width: 50%;
+    height: 300px;
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('images/maldives.png'), lightgray 50% / cover no-repeat;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+
+  .indonesia{
+    width: 50%;
+    height: 300px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('images/indonesia.png'), lightgray 50% / cover no-repeat;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+
+  .second-row{
+    margin-top: 20px;
+    height: 286px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .srilanka{
+    width: 374px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('images/srilanka.png'), lightgray 50% / cover no-repeat;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .north-america{
+    width: 474px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('images/north-america.png'), lightgray 50% / cover no-repeat;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .kashmir{
+    width: 274px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('images/kashmir.png'), lightgray 50% / cover no-repeat;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .third-row{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .bangladesh{
+    width: 473px;
+    height: 300px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('images/bangladesh.png'), lightgray 50% / cover no-repeat;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .bandarban{
+    width: 673px;
+    height: 300px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('images/bandarban.png'), lightgray 50% / cover no-repeat;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .srilanka, .north-america, .kashmir, .maldives, .indonesia, .bandarban, .bangladesh:hover{
+    cursor: pointer;
+  }
+
+  .place-title{
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+  }
+
+  .choose-us{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .hotel-type{
+    display: flex;
+    gap: 20px;
+  }
+
+  .half-width-hotel{
+    width: 50%;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+
+.discount-1{
+  width: 100%;
+  height: 500px;
+  border-radius: 16px;
+  background-image: url('images/discount-bg-1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+
+.inner-section{
+  border-radius: 16px;
+  border: 2px solid #FFF;
+  background: rgba(255, 255, 255, 0.80);
+  backdrop-filter: blur(2.5px);
+  padding: 30px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  left: 560px;
+  top: 70px;
+}
+
+.inner-top-info{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  color: #5A5A5D;
+}
+
+.inner-title{
+  color: #131318;
+  font-size: 24px;
+  font-weight: 800;
+}
+.inner-text{
+  color: #5A5A5D;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.inner-price{
+  color: #FF5400;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+
+/* .inner-section{
+  width: 100%;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  body {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0 auto;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    margin: 0;
+  }
+
+  .container {
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid red;
+  }
+
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+  .menu ul {
+    gap: 15px;
+  }
+
+  .banner-title {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+  }
+
+  .banner-text {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 21px;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner {
+    border-radius: 16px;
+    background-image: url("images/banner-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .form-container {
+    width: 400px;
+    padding: 25px 25px;
+  }
+
+  .search-info {
+    width: 100%;
+    height: 50px;
+    padding: 0px;
+    border: none;
+    border-radius: 8px;
+
+
+  }
+
+  .search-info select {
+    width: 100%; 
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+  }
+
+  .search-info select{
+    width: 100%;
+  }
+
+  .search-info::placeholder{
+    padding-left: 10px;
+}
+
+  .btn-primary {
+    background: #ff5400;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    padding: 13px 0px;
+  }
+
+  .banner-text{
+    padding: 0 35px;
+    line-height: 21px;
+  }
+
+  .banner-content{
+    gap: 30px;
+  }
+
+  /* ....................................................header end here...................................................... */
+
+  .popular{
+    margin-top: 40px;
+    flex-direction: column;
+}
+.text-container, .mountain{
+    width: auto;
+}
+
+.text-container{
+    gap: 20px;
+}
+
+.btn-read-more{
+    width: 180px;
+}
+
+ /* ....................................................popular end here...................................................... */
+
+ .maldives{
+    width: 100%;
+    height: 300px;
+
+ }
+
+ .indonesia{
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('images/indonesia.png'), lightgray 50% / cover no-repeat;
+
+ }
+
+ .first-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .common-title{
+    color: #131318;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+
+}
+
+.destination{
+  margin-top: 30px;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.destination-text{
+ width: 80%;
+ text-align: center;
+
+}
+
+.place-container{
+  width: 100%;
+}
+
+.second-row{
+  margin-top: 20px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.third-row{
+  margin-top: 20px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.srilanka{
+  width: 100%;
+  height: 286px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.north-america{
+  width: 100%;
+  height: 286px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.kashmir{
+  width: 100%;
+  height: 286px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bangladesh{
+  width: 100%;
+  height: 286px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bandarban{
+  width: 100%;
+  height: 286px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hotel-type{
+  flex-direction: column;
+}
+
+.half-width-hotel{
+  align-items: start;
+  padding: 20px;
+  width: calc(100% - 40px);
+}
+
+.choose-us{
+  margin-top: 30px;
+}
+
+.discount-1{
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 150px;
+  
+} 
+
+.inner-section{
+  width: 60%;
+  padding: 30px;
+}
+
+.inner-section button{
+  width: 150px;
+}
+
+.inner-section{
+
+  left: 70px;
+  top: 20px;
+  bottom: 0;
+}
+
+
+
+
+
 }
