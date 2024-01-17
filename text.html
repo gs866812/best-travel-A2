@@ -4,56 +4,96 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    .grid-container {
-      display: grid;
-      grid-template-rows: 50% 50%; /* 1:3:2 */
-      gap: 10px; /* Adjust the gap between grid items as needed */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
     }
 
-    .grid-item {
-      width: 100%;
-      height: 100%;
-      border: 1px solid #ccc; /* Optional: Add borders for better visibility */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    .grid-item:nth-child(1){
-        grid-column: span 1;
-    }
-    .grid-item:nth-child(2) {
-      grid-column: span 1; /* 50% + 50% */
+    #logo {
+      width: 100px; /* Adjust the width as needed */
     }
 
-    .grid-item:nth-child(3) {
-      grid-column: span 1; /* 100% */
+    #menu-icon {
+      display: none;
+      cursor: pointer;
+      font-size: 20px;
     }
 
-    .grid-item:nth-child(4) {
-      grid-column: span 3; /* 20% + 60% + 20% */
-      display: grid;
-      grid-template-columns: 20% 60% 20%;
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
     }
 
-    .grid-item:nth-child(5) {
-      grid-column: span 2; /* 30% + 70% */
-      display: grid;
-      grid-template-columns: 30% 70%;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    li {
+      margin: 0 15px;
+    }
+
+    @media screen and (max-width: 768px) {
+      #menu-icon {
+        display: block;
+      }
+
+      nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav li {
+        margin: 10px 0;
+      }
+
+      nav.active {
+        display: flex;
+      }
     }
   </style>
 </head>
 <body>
 
-  <div class="grid-container">
-    <!-- First Row -->
-    <div class="grid-item">Image 1</div>
-    <div class="grid-item">Image 2</div>
+  <header>
+    <img src="your-logo.png" alt="Logo" id="logo">
+    <div id="menu-icon">&#9776;</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Second Row -->
-    <div class="grid-item">Content 1</div>
-
-    <!-- Third Row -->
-    <div class="grid-item">Content 2</div>
-    <div class="grid-item">Content 3</div>
-  </div>
+  <script>
+    document.getElementById('menu-icon').addEventListener('click', function() {
+      document.querySelector('nav').classList.toggle('active');
+    });
+  </script>
 
 </body>
 </html>

@@ -220,7 +220,7 @@ a{
 
  /* ....................................................popular end here...................................................... */
 .destination{
-  margin-top: 50px;
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -355,7 +355,7 @@ a{
   }
 
   .choose-us{
-    margin-top: 50px;
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -474,7 +474,7 @@ a{
 
 
 .perfect-place{
-  margin-top: 50px;
+  margin-top: 60px;
   display: flex;
   gap: 30px;
 }
@@ -608,6 +608,8 @@ form{
   width: 25px;
 }
 
+
+
 .footer{
   display: flex;
   flex-direction: column;
@@ -618,6 +620,7 @@ form{
   background: rgba(19, 19, 24, 0.05);
   margin-top: 80px;
   padding: 0 200px;
+  width: auto;
 }
 
 .social-icon{
@@ -628,49 +631,6 @@ form{
 .search-icon{
   width: 15px;
 }
-
-
-/* 
-
-
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -715,7 +675,7 @@ form{
   }
 
   .banner-title {
-    font-size: 30px;
+    font-size: 35px;
     font-style: normal;
     font-weight: 800;
   }
@@ -810,6 +770,7 @@ form{
 
 .text-container{
     gap: 20px;
+    align-items: start;
 }
 
 .btn-read-more{
@@ -1034,7 +995,7 @@ form{
 
 .newsletter-content{
   gap: 10px;
-  padding: 10px;
+  padding: 20px;
 }
 
 form{
@@ -1080,6 +1041,30 @@ form{
 
 
 
+}
 
+
+@media screen and (min-width: 601px) and (max-width:992px) {
+  .container-one{
+    width: 100%;
+  }
+  .container{
+    width: 100%;
+  }
+
+  .maldives, .indonesia{
+    width: 100%;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 500px;
+    background: rgba(19, 19, 24, 0.05);
+    margin-top: 80px;
+    padding: 0;
+    width: 100%;
+  }
 
 }
