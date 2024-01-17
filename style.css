@@ -13,6 +13,15 @@ p {
   margin: 0;
 }
 
+
+a{
+  text-decoration: none;
+}
+.container-one {
+  width: 1170px;
+  margin: 0 auto;
+}
+
 .container {
   width: 1170px;
   margin: 0 auto;
@@ -134,6 +143,17 @@ p {
 }
 
 .btn-primary {
+  background: #ff5400;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  padding: 11px 30px;
+  cursor: pointer;
+}
+
+.find-now-btn{
   background: #ff5400;
   border-radius: 8px;
   border: none;
@@ -584,6 +604,31 @@ form{
   font-weight: 800;
 }
 
+.footer img{
+  width: 25px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  height: 400px;
+  background: rgba(19, 19, 24, 0.05);
+  margin-top: 80px;
+  padding: 0 200px;
+}
+
+.social-icon{
+  display: flex;
+  gap: 25px;
+}
+
+.search-icon{
+  width: 15px;
+}
+
 
 /* 
 
@@ -645,6 +690,12 @@ form{
   }
 
   .container {
+    width: 500px;
+    margin: 0 auto;
+ 
+  }
+
+  .container-one {
     width: 500px;
     margin: 0 auto;
  
@@ -730,6 +781,7 @@ form{
     cursor: pointer;
     width: 100%;
     padding: 13px 0px;
+    position: relative;
   }
 
   .btn-primary-mobile {
@@ -1011,6 +1063,20 @@ form{
   font-size: 21px;
 }
 
+
+
+.footer{
+  gap: 20px;
+  height: auto;
+  background: rgba(19, 19, 24, 0.05);
+  margin-top: 40px;
+  padding: 30px 60px;
+ 
+}
+
+.find-now-btn{
+  width: 100%;
+}
 
 
 
